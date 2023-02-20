@@ -10,7 +10,7 @@
 ///Definições nescessárias no arquivo
 #define Largura 100 //Tamanho para o console
 
-design(){
+design(){           //função com o design de exibição de texto
 
     deadline();
     printf("\n\n\t\t\t\t\tBem-vindo ao Logo Trutle!\n\n");
@@ -21,7 +21,7 @@ design(){
 
 }
 
-menu()
+menu()          //função de seleção e troca de itens do menu
 {
     char indicador;
 options:
