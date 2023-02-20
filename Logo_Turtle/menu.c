@@ -5,18 +5,19 @@
 
 ///Pré-processamento
 #include "menu.h"
+#include "jogo.h"
 
 ///Definições nescessárias no arquivo
 #define Largura 100 //Tamanho para o console
 
 design(){
 
-    for(int i = 0; i<= Largura; i++){printf("#");}
+    deadline();
     printf("\n\n\t\t\t\t\tBem-vindo ao Logo Trutle!\n\n");
     printf("\t\t\t1. Iniciar Jogo\n");
     printf("\t\t\t2. About\n");
     printf("\t\t\t3. Exit\n\n");
-    for(int i = 0; i<= Largura; i++){printf("#");}
+    deadline();
 
 }
 
@@ -29,7 +30,7 @@ options:
     switch (indicador)
     {
     case '1':
-        jogo();
+        game();
         break;
     case '2':
         about();
@@ -42,5 +43,7 @@ options:
     }
 }
 
-jogo(){ system("cls");printf("\n Opção 1 selecionada.\n");}
-about(){ system("cls");printf("Opção 2 selecionada.\n");}
+
+about(){ system("cls");deadline();printf("\nAlunos:\nPedro Bulle\nVinicius Jose\n\n");deadline();}
+
+deadline(){for(int i = 0; i<= Largura; i++){printf("#");}printf("\n");}

@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1676871230 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.c
-	"menu.h"
+1676875857 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.c
 	<conio.h>
+	"menu.h"
+	"jogo.h"
 
 1676872755 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
 
@@ -9,4 +10,8 @@
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
+
+1676874685 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
+
+1676874720 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
 
