@@ -14,5 +14,5 @@ int main()
 {
 design();
 menu();
-
+return EXIT_FAILURE;
 }
