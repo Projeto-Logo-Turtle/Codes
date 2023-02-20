@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "menu.h"
 
 int main()
 {
-    printf("\n\tLogo Turtle!\nMenu:\n");
+design();
     return 0;
 }
