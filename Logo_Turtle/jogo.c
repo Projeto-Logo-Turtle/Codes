@@ -7,21 +7,18 @@ game(){ system("cls");printf("\n Lets play!\n");
 
 
 
-struct entrada{
-
+typedef struct entrada{
 char* comando[20];
 int passos;
+} entr; //struct de entrada com
 
-} entrada;          //descobri que posso declarar aqui
 
-                    //tentarei fazer a entrada por meio de um array
-
-int entrada.quantidade[40];         ///dando erro aqui, acredito que pela sintaxe
-
-quantidade[0].comando = "teste";
-
+    entr quantidade[40];
+    gets(quantidade[0].comando);    //linhas e teste
+    //strcpy(quantidade[0].comando, "teste"); /* stringcopy para passar o nome "teste" para o prmeiro char, da primeira struct do array*/
+    puts(quantidade[0].comando);
 
 
 }
 
-/* esqueci o commit de criação das structs8/
+/* esqueci o commit de criação das structs */
