@@ -5,5 +5,5 @@
 
 design(); //Assinatura da função do design inicial
 menu(); //Assinatura da função do menu
-
+deadline();
 #endif // MENU_H_INCLUDED
