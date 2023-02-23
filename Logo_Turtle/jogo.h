@@ -3,6 +3,11 @@
 #ifndef JOGO_H_INCLUDED
 #define JOGO_H_INCLUDED
 
+///definições
+
+#define Largura 100
+#define altura 50
+
 typedef struct entrada
     {
         char comando[20];
