@@ -11,9 +11,10 @@
 	<stdlib.h>
 	"menu.h"
 
-1677124789 source:c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
+1677126904 source:c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
 	"menu.h"
 	"jogo.h"
+	<iso646.h>
 
 1677124429 c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
 

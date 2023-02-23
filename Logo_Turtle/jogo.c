@@ -1,11 +1,12 @@
 #include "menu.h"
 #include "jogo.h" // precisei incluir o cabeçalho do jogo pois mandei o novo tipo de variável pra lá e ficará disponivel pra todos que acessarem.
-
+#include <iso646.h> //biblioteca de operadores logicos
 game()
 {
     system("cls");
     deadline();
-    printf("\n\t\t\tLets play!\n\n");
+    printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo\n\n\n");
+
     entr quantidade[20];
     inputs(quantidade);
     teste_inputs(quantidade);
@@ -13,10 +14,26 @@ game()
 
 inputs(entr quantidade[20])
 {
-    for (int indice = 0; indice < 20; indice++)
+    int indice; //optei por tirar a declaração do parametro do for.
+    for (indice = 0; indice < 20; indice++)
     {
+        ALOCATION_COMANDO:
         printf("\nDigite o Comando %d: ", indice); // acredito que posso colocar as contagens
         scanf("%s", quantidade[indice].comando);
+
+
+if(not (strcmp(quantidade[indice].comando, "frente") == 0 or
+        strcmp(quantidade[indice].comando, "tras") == 0 or
+        strcmp(quantidade[indice].comando, "cima") == 0 or
+        strcmp(quantidade[indice].comando, "baixo") == 0))
+         {
+    //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
+    goto ALOCATION_COMANDO;
+}
+
+
+
+        ALOCATION_VALOR:
         printf(" Valor %d: ", indice);
         scanf("%d", &quantidade[indice].passos);
     }
