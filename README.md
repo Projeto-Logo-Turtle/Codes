@@ -1,4 +1,20 @@
-# Códigos
-Repositório portando o corpo de código
->Esta é a primeira tentativa de commit
-Neste arquivo, ficará algumas descrições do processo de desenvolvimento do Jogo "Logo Turtle" em C.
+a seta não vai pegar 2 coordenadas. pegará uma e um valor (escalar 1, 2...) ordem (frente, tras...)
+
+
+
+
+matriz,
+
+centralizar seta
+
+fazer merxer-se com os comandos
+
+
+
+------
+
+
+deslocar-se
+
+
+diagonais(4)

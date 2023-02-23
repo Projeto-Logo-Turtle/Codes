@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1677188609 source:c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\projetos_auxiliares\matriz andante\main.c
+	<stdio.h>
+	<conio.h>
+
