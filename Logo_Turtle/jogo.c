@@ -1,6 +1,7 @@
 #include "menu.h"
 #include "jogo.h" // precisei incluir o cabeçalho do jogo pois mandei o novo tipo de variável pra lá e ficará disponivel pra todos que acessarem.
 #include <iso646.h> //biblioteca de operadores logicos
+#include <ctype.h>      //para uso da função "isdigit"
 game()
 {
     system("cls");
@@ -34,14 +35,14 @@ inputs(entr quantidade[20])
 
         ALOCATION_VALOR:
     printf("Valor %d: ", indice);
-    scanf("%d", &quantidade[indice].passos);
+    scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
 
-    if(quantidade[indice].passos < 1 or quantidade[indice].passos > 10)
+    /*if(not isdigit(quantidade[indice].passos) or (quantidade[indice].passos < 1 or quantidade[indice].passos > 10))
         {
             //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
             printf("\nRepita:");
             goto ALOCATION_VALOR;
-        }
+        }*/
 
 
     }
