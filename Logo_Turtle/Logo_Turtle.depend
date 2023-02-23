@@ -4,18 +4,19 @@
 	"menu.h"
 	"jogo.h"
 
-1677084334 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
+1677131487 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
 
 1676919957 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
 
-1677130644 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
+1677132798 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
 	"menu.h"
 	"jogo.h"
 	<iso646.h>
 	<ctype.h>
+	<time.h>
 
 1677124429 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
 
