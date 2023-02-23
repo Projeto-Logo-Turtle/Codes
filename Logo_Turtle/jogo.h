@@ -3,6 +3,12 @@
 #ifndef JOGO_H_INCLUDED
 #define JOGO_H_INCLUDED
 
+typedef struct entrada
+    {
+        char comando[20];
+        int passos;
+    } entr;
+
 game();//função que irão desencadear o jogo.
 inputs();
 teste_inputs(entr quantidade[]);

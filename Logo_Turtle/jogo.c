@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "jogo.h" // precisei incluir o cabeçalho do jogo pois mandei o novo tipo de variável pra lá e ficará disponivel pra todos que acessarem.
 game()
 {
     system("cls");
@@ -8,11 +9,7 @@ game()
     teste_inputs();
 }
 
- typedef struct entrada
-    {
-        char comando[20];
-        int passos;
-    } entr; //struct de entrada com
+
 
 inputs(entr quantidade[20])
 {
