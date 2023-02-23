@@ -12,5 +12,6 @@ typedef struct entrada
 game(); //função que irão desencadear o jogo.
 inputs(entr quantidade[20]);
 teste_inputs(entr quantidade[]);
+transition();
 
 #endif // JOGO_H_INCLUDED
