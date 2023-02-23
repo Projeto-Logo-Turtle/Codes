@@ -33,13 +33,13 @@ inputs(entr quantidade[20])
         }
 
         ALOCATION_VALOR:
+    printf("Valor %d: ", indice);
+    scanf("%d", &quantidade[indice].passos);
 
-        printf(" Valor %d: ", indice);
-        scanf("%d", &quantidade[indice].passos);
-
-        if (quantidade[indice].passos < 1 or quantidade[indice].passos > 10)
+    if(quantidade[indice].passos < 1 or quantidade[indice].passos > 10)
         {
-            printf("Repita:\n");
+            //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
+            printf("\nRepita:");
             goto ALOCATION_VALOR;
         }
 
