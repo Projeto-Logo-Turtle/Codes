@@ -5,7 +5,7 @@ game()
 {
     system("cls");
     deadline();
-    printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo\n\n\n");
+    printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo\n\t\tValores de 1 ate 10\n\n");
 
     entr quantidade[20];
     inputs(quantidade);
@@ -22,27 +22,37 @@ inputs(entr quantidade[20])
         scanf("%s", quantidade[indice].comando);
 
 
-if(not (strcmp(quantidade[indice].comando, "frente") == 0 or
-        strcmp(quantidade[indice].comando, "tras") == 0 or
-        strcmp(quantidade[indice].comando, "cima") == 0 or
-        strcmp(quantidade[indice].comando, "baixo") == 0))
-         {
-    //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
-    goto ALOCATION_COMANDO;
-}
-
-
+        if(not (strcmp(quantidade[indice].comando, "frente") == 0 or
+                strcmp(quantidade[indice].comando, "tras") == 0 or
+                strcmp(quantidade[indice].comando, "cima") == 0 or
+                strcmp(quantidade[indice].comando, "baixo") == 0))
+        {
+            //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
+            printf("\nRepita:");
+            goto ALOCATION_COMANDO;
+        }
 
         ALOCATION_VALOR:
+
         printf(" Valor %d: ", indice);
         scanf("%d", &quantidade[indice].passos);
+
+        if (quantidade[indice].passos < 1 or quantidade[indice].passos > 10)
+        {
+            printf("Repita:\n");
+            goto ALOCATION_VALOR;
+        }
+
+
     }
 }
 
 teste_inputs(entr quantidade[])
 {
     //função para exibir as entradas da matriz quantidade
-    printf("Respostas:");
+    system("cls");
+    deadline();
+    printf("\n\n\t\tSeus comandos foram:");
     int contagem;
     for (contagem = 0; contagem < 20; contagem++)
     {
