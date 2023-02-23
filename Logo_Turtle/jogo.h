@@ -9,7 +9,8 @@ typedef struct entrada
         int passos;
     } entr;
 
-game();//função que irão desencadear o jogo.
-inputs();
+game(); //função que irão desencadear o jogo.
+inputs(entr quantidade[20]);
 teste_inputs(entr quantidade[]);
+
 #endif // JOGO_H_INCLUDED
