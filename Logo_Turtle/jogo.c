@@ -15,14 +15,23 @@ int passos;
 
     entr quantidade[20];    //declarei um novo tipo de variavel, que consiste num array (Matriz unidimensional) de uma estrutura.
 
-    for (int i = 0; i < 20; i++)
+    for (int indice = 0; indice < 20; indice++)
     {
-        printf("\t\t\tDigite o Comando: ");
-        scanf("%s", quantidade[i].comando);
-        printf("\b\b\b\b\b\b\bValor:  \n\n");
-        scanf("%d", &quantidade[i].passos);
+        printf("\nDigite o Comando: ");
+        scanf("%s", quantidade[indice].comando);
+        printf(" Valor: ");
+        scanf("%d", &quantidade[indice].passos);
 
     }
+
+    /*função para exibir as entradas da matriz quantidade
+    printf("Respostas:");
+    int contagem;
+    for (contagem = 0; contagem < 20; contagem++) {
+        printf("Entrada %d: Comando=%s, Passos=%d\n", contagem, quantidade[contagem].comando, quantidade[contagem].passos);
+    }
+    */
+
 
     deadline();
 }
