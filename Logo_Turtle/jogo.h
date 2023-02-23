@@ -3,6 +3,11 @@
 #ifndef JOGO_H_INCLUDED
 #define JOGO_H_INCLUDED
 
+///definições
+
+#define largura 100
+#define altura 50
+
 typedef struct entrada
     {
         char comando[20];
@@ -13,5 +18,7 @@ game(); //função que irão desencadear o jogo.
 inputs(entr quantidade[20]);
 teste_inputs(entr quantidade[]);
 transition();
+paredes();
+imprime_board();
 
 #endif // JOGO_H_INCLUDED

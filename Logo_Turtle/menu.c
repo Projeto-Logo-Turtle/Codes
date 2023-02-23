@@ -8,7 +8,7 @@
 #include "jogo.h"
 
 ///Definições nescessárias no arquivo
-#define Largura 100 //Tamanho para o console
+#define largura 100 //Tamanho para o console
 
 
 
@@ -61,4 +61,4 @@ about()
         }
 
 
-deadline(){for(int i = 0; i<= Largura; i++){printf("#");}printf("\n");}
+deadline(){for(int i = 0; i<= largura; i++){printf("#");}printf("\n");}

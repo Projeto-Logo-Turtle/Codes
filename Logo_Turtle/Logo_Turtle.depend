@@ -20,3 +20,24 @@
 
 1677135040 c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
 
+1677160583 source:c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677160583 c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\menu.h
+
+1677184913 source:c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677184993 c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\jogo.h
+
+1677184913 source:c:\users\vjfr\documents\proj.logo_turtle\codes\logo_turtle\jogo.c
+	"menu.h"
+	"jogo.h"
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+

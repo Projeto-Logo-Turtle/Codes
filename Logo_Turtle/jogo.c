@@ -2,11 +2,21 @@
 #include "jogo.h" // precisei incluir o cabeçalho do jogo pois mandei o novo tipo de variável pra lá e ficará disponivel pra todos que acessarem.
 #include <iso646.h> //biblioteca de operadores logicos
 #include <ctype.h>      //para uso da função "isdigit"
-#include <time.h>  //para delay
+#include <time.h>  //para delays
+
+///Definições
+
+
+#define largura 100
+#define altura 50
+
+
 game()
 {
     system("cls");
-    deadline();
+    imprime_board();
+
+
     printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo (ou digite fim para sair).\n\t\tValores de 1 ate 10\n\n");
 
     entr quantidade[20];
@@ -94,6 +104,25 @@ transition() {
     }
 }
 
+
+paredes() {
+    printf("#");
+    for (int i = 1; i < largura - 1; i++) {
+        printf(" ");
+    }
+    printf("#\n");
+}
+
+imprime_board() {
+    while (1) {
+        system("cls");
+        deadline();
+        for (int medida = 0; medida < altura; medida++) {
+            paredes();
+        }
+        deadline();
+    }
+}
 
 
 
