@@ -2,7 +2,7 @@
 #include "jogo.h" // precisei incluir o cabeçalho do jogo pois mandei o novo tipo de variável pra lá e ficará disponivel pra todos que acessarem.
 #include <iso646.h> //biblioteca de operadores logicos
 #include <ctype.h>      //para uso da função "isdigit"
-#include <time.h>
+#include <time.h>  //para delay
 game()
 {
     system("cls");
