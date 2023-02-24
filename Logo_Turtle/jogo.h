@@ -15,7 +15,13 @@ typedef struct entrada
         int passos;
     } entr;
 
-game(); //função que irão desencadear o jogo.
+chamada_game(); //função que irão desencadear o jogo.
+
+
+
+
+
+int board (char tabuleiro[largura][altura]);
 inputs(entr quantidade[20]);
 teste_inputs(entr quantidade[]);
 transition();

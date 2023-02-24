@@ -12,7 +12,6 @@
 
 int main()
 {
-design();
-menu();
+chamada_menu();
 return EXIT_FAILURE; //coloquei esse return 1 pois tenho intenção de criar outra função para finalizar o game.
 }

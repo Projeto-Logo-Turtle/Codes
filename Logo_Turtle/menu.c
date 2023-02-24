@@ -10,7 +10,12 @@
 ///Definições nescessárias no arquivo
 #define largura 100 //Tamanho para o console
 
-
+chamada_menu(){
+design();
+menu();
+about();
+//deadline();
+}
 
 design(){           //função com o design de exibição de texto
 
@@ -33,7 +38,7 @@ options:
     switch (indicador)
     {
     case '1':
-        game();
+        chamada_game();
         break;
     case '2':
         about();
@@ -62,3 +67,12 @@ about()
 
 
 deadline(){for(int i = 0; i<= largura; i++){printf("#");}printf("\n");}
+paredes()
+{
+    printf("#");
+    for (int i = 1; i < largura - 1; i++)
+    {
+        printf(" ");
+    }
+    printf("#\n");
+}

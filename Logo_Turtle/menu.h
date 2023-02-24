@@ -2,6 +2,11 @@
 
 #ifndef MENU_H_INCLUDED
 #define MENU_H_INCLUDED
+chamada_menu();
+
+
+
+
 
 design(); //Assinatura da função do design inicial
 menu(); //Assinatura da função do menu
@@ -9,4 +14,5 @@ deadline();
 
 
 about();
+paredes();
 #endif // MENU_H_INCLUDED
