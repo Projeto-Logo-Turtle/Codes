@@ -3,17 +3,26 @@
 #include <iso646.h> //biblioteca de operadores logicos
 #include <ctype.h>      //para uso da função "isdigit"
 #include <time.h>  //para delay
+
+
+
+///Definições
+
+
+#define largura 100
+#define altura 50
+
+
 game()
 {
     system("cls");
-    deadline();
-    printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo (ou digite fim para sair).\n\t\tValores de 1 ate 10\n\n");
-
+    imprime_board();
     entr quantidade[20];
     inputs(quantidade);
     teste_inputs(quantidade);
 sleep(5);
 transition();
+
 }
 
 inputs(entr quantidade[20])
@@ -94,6 +103,27 @@ transition() {
     }
 }
 
+
+paredes() {
+    printf("#");
+    for (int i = 1; i < largura - 1; i++) {
+        printf(" ");
+    }
+    printf("#\n");
+}
+
+imprime_board() {
+        //tirei o while
+
+        system("cls");
+        printf("\n\t\t\tLets play!\n\n\t\tMovimentos: frente, tras, cima, baixo (ou digite fim para sair).\n\t\tValores de 1 ate 10\n\n");
+        deadline();
+        for (int medida = 0; medida < altura; medida++) {
+            paredes();
+        }
+        deadline();
+
+}
 
 
 
