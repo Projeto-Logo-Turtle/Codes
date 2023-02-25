@@ -1,18 +1,29 @@
-///Arquivo .c para modularizar as funções do menu.
-
-///Bibliotecas
-#include <conio.h> //para ultilizar o getch()
-
-///Pré-processamento
+///L
+#include <conio.h>
+///A
 #include "menu.h"
 #include "jogo.h"
+///D
+///S
 
-///Definições nescessárias no arquivo
-#define Largura 100 //Tamanho para o console
+///CALL
+int chamada_menu()
+{
+    inicial(); // adicionado para chamar a função
+}
 
+///FUNCTIONS
+void inicial()
+{
+    //função na tentativa de concatenar design e switch. seria melhor uma terceira fun ou simplesmente concatenar os blocos?
+    design();
+    switch_menu();
+    //talvez eu possa colocar tudo em um unico block, mas seguindo Djikstra² "Divide et Impera". "Dividir e reinar".
+}
 
+void deadline(){for(int i = 0; i<= largura*2; i++){printf("#");}printf("\n");}
 
-design(){           //função com o design de exibição de texto
+void design(){  //void, pois eh uma function de print.
 
     deadline();
     printf("\n\n\t\t\t\t\tBem-vindo ao Logo Trutle!\n\n");
@@ -20,20 +31,21 @@ design(){           //função com o design de exibição de texto
     printf("\t\t\t2. About\n");
     printf("\t\t\t3. Exit\n\n");
     deadline();
-
 }
 
-menu()          //função de seleção e troca de itens do menu
+void switch_menu()
 {
 
-    char indicador;
+    char indicador; //Variáveis locais optarei por padronizar
+
 options:
 
     indicador = getch();
     switch (indicador)
     {
     case '1':
-        game();
+        printf("chamou");
+        chamada_game();
         break;
     case '2':
         about();
@@ -47,18 +59,31 @@ options:
 }
 
 
-about()
+void about()
 {
     system("cls");
+    //
     deadline();
     printf("\nAlunos:\nPedro Bulle\nVinicius Jose\n\n");
     deadline();
+    //
 
    system("pause");
    system("cls");
-   design();
-   menu();
+   inicial();
         }
 
 
-deadline(){for(int i = 0; i<= Largura; i++){printf("#");}printf("\n");}
+
+/*paredes()
+{
+    printf("#");
+    for (int i = 1; i < largura - 1; i++)
+    {
+        printf(" ");
+    }
+    printf("#\n");
+}
+
+// que tal tentar encaixar tudo isso numa matriz, ao inves de varios printf? o melhor manter assim?
+*/

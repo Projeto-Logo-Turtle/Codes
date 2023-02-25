@@ -1,18 +1,28 @@
-///Bibliotecas
+/*resolvi passar a limpo o codigo de forma que fique mais polido, vou considerar como a versão 2.0.0*/
+
+///Libs (Bibliotecas)
 
 #include <stdio.h>
 #include <stdlib.h>
 
-///Pré-processamento
+///Archives - (Pré-processamento)
 #include "menu.h"
 
-///Definições
+///Definitions (Definições)
+#define EXIT_GAME 0
+
+///Signatures (Assinaturas)
 
 
-
-int main()
+int main()//void essa e as demais para elas retornarem vazio. Segundo Schildt¹, caso não declarada, a função retorna um valor, pode ser 0, de acordo com o compiolador.
 {
-design();
-menu();
-return EXIT_FAILURE; //coloquei esse return 1 pois tenho intenção de criar outra função para finalizar o game.
+/*  ///variaveis globais
+    char canva[largura][altura];
+    entr quantidade[20];
+*/
+    ///Calls
+    chamada_menu();
+
+END_GAME:
+return EXIT_GAME;
 }

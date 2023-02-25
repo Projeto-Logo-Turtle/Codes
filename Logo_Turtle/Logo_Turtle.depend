@@ -1,22 +1,45 @@
 # depslib dependency file v1.0
-1677131315 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.c
+1677210277 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.c
 	<conio.h>
 	"menu.h"
 	"jogo.h"
 
-1677131487 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
+1677210277 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
 
-1676919957 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\main.c
+1677209657 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
 
-1677133495 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
+1677212462 source:c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
 	"menu.h"
 	"jogo.h"
 	<iso646.h>
 	<ctype.h>
 	<time.h>
+	<windows.h>
 
-1677135040 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
+1677210648 c:\users\vinij\onedrive\햞ea de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
+
+1677360084 source:c:\users\vinij\onedrive\햞ea de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677360648 c:\users\vinij\onedrive\햞ea de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\menu.h
+
+1677360915 source:c:\users\vinij\onedrive\햞ea de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677363379 c:\users\vinij\onedrive\햞ea de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\jogo.h
+
+1677363351 source:c:\users\vinij\onedrive\햞ea de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
 
