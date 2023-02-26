@@ -127,7 +127,7 @@ void primeira_chamada(char I_G[largura][altura]){
     imprimir_tabuleiro(I_G);
 
 }
-
+///------------------Função principal - Dividir-------------------------------------------------------------------------
 int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 {
     ///Var
@@ -159,7 +159,9 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             printf("\nSalvo!\n");
             continue;
             }
-
+        else if (strcmp(quantidade[indice].comando, "move") == 0){
+            goto MOVIMENTATION;
+        }
         else if(not (strcmp(quantidade[indice].comando, "sudoeste") == 0 or
                      strcmp(quantidade[indice].comando, "sudeste") == 0 or
                      strcmp(quantidade[indice].comando, "noroeste") == 0 or
@@ -178,7 +180,10 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         printf("Valor %d: ", indice+1);
         scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
 
-//fim da coleta inicio do desenho
+///----------fim da coleta inicio do desenho-------------------------------------------------------------
+
+
+        MOVIMENTATION:
 
         if (strcmp(quantidade[indice].comando, "fim") == 0) {
                 return matriz[x][y];
@@ -276,6 +281,20 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+        }
+
+        else if (strcmp(quantidade[indice].comando, "move") == 0) {
+
+            matriz[x][y] = ' ';
+            int novo_X, novo_y;
+            printf("\nDigite a coordenada em X: ");
+            scanf("%d", &novo_X);
+            printf("\nDigite a coordenada em Y: ");
+            scanf("%d", &novo_y);
+            x=novo_X;
+            y=novo_y;
+            matriz[x][y] = 1;
+
         }
     //dentro do for, fora dos ifs
     system("cls");
