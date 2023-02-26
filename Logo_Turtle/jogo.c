@@ -140,7 +140,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
     int y = altura / 2;
     matriz[x][y] = 1; // Imprime a tartaruga no centro da matriz
     char backup [largura][altura];
-
+    int bck_X, bck_Y;
 
 
     ///codigos
@@ -148,11 +148,13 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
     for (indice = 0; indice < 20; indice++)
     {
         //bloco de substituição do backup
-            for (int i = 0; i < largura; i++) {
+        /*
+           for (int i = 0; i < largura; i++) {
                 for (int j = 0; j < altura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
+        */
         //------------
 
 
@@ -164,7 +166,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
         if(strcmp(quantidade[indice].comando, "fim") == 0)
         {
-            break; // sai do loop for
+           goto MOVIMENTATION;
+           // break; // sai do loop for
         }
 
         else if (strcmp(quantidade[indice].comando, "save") == 0){
@@ -205,7 +208,12 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
 
         if (strcmp(quantidade[indice].comando, "fim") == 0) {
-
+                // não está chegando aqui
+                /*debug
+                system("cls");
+                printf("chegou. o comando foi: %s", quantidade[indice-1].comando);
+                system("pause");
+                */
                 //condições encadeadas para substituir o ultimo caractere, para n imprimir a tartaruga
                 if (strcmp(quantidade[indice-1].comando, "leste") == 0) { matriz[x][y] = '-';}
                 else if (strcmp(quantidade[indice-1].comando, "oeste") == 0) { matriz[x][y] = '-';}
@@ -224,7 +232,18 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
                 return matriz[x][y];
             break;
         }
-        else if (strcmp(quantidade[indice].comando, "leste") == 0) { matriz[x][y] = '-';
+        else if (strcmp(quantidade[indice].comando, "leste") == 0) {
+                //bloco de substituição do backup
+                bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+
+                matriz[x][y] = '-';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y + 1 < altura) {
@@ -234,19 +253,48 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "oeste") == 0) { matriz[x][y] = '-';
+        else if (strcmp(quantidade[indice].comando, "oeste") == 0) {
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+
+                matriz[x][y] = '-';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
                     y--;
                     matriz[x][y] = '-';
+
                 }
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "norte") == 0) { matriz[x][y] = '|';
+        else if (strcmp(quantidade[indice].comando, "norte") == 0) {
+
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+
+                matriz[x][y] = '|';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (x - 1 >= 0) {
@@ -256,8 +304,20 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
         }
-        else if (strcmp(quantidade[indice].comando, "sul") == 0) { matriz[x][y] = '|';
+        else if (strcmp(quantidade[indice].comando, "sul") == 0) {
+
+                //bloco de substituição do backup
+                bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+                matriz[x][y] = '|';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (x + 1 < largura) {
@@ -268,8 +328,21 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
 
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "noroeste") == 0) { matriz[x][y] = '\\';
+        else if (strcmp(quantidade[indice].comando, "noroeste") == 0) {
+
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+                matriz[x][y] = '\\';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
@@ -280,8 +353,21 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "nordeste") == 0) { matriz[x][y] = '/';
+        else if (strcmp(quantidade[indice].comando, "nordeste") == 0) {
+
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+                matriz[x][y] = '/';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
@@ -292,8 +378,21 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "sudoeste") == 0) { matriz[x][y] = '/';
+        else if (strcmp(quantidade[indice].comando, "sudoeste") == 0) {
+
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+                matriz[x][y] = '/';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
@@ -304,8 +403,21 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
         }
-        else if (strcmp(quantidade[indice].comando, "sudeste") == 0) { matriz[x][y] = '\\';
+        else if (strcmp(quantidade[indice].comando, "sudeste") == 0) {
+
+                 //bloco de substituição do backup
+                 bck_X = x; bck_Y = y;
+            for (int i = 0; i < largura; i++) {
+                for (int j = 0; j < altura; j++) {
+            backup[i][j] = matriz[i][j];
+            }
+        }
+        //------------
+
+                matriz[x][y] = '\\';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
@@ -316,6 +428,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = 1;
+
+
         }
 
         else if (strcmp(quantidade[indice].comando, "move") == 0) {
@@ -334,23 +448,27 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             matriz[x][y] = 1;
 
         }
-                        else if (strcmp(quantidade[indice].comando, "desfaz") == 0){
-                                /*printf("chegou");
-                                system ("pause");*/
-                /*        for (int i = 0; i < largura; i++) {
-                    for (int j = 0; j < altura; j++) {
-                  matriz[i][j] = backup[i][j];
+        else if (strcmp(quantidade[indice].comando, "desfaz") == 0){
+    // recupera os valores da matriz backup
+    //matriz[x][y] = ' '; // é esperado que fiquem duas tartarugas, ent essa primeira vai apagar
 
-                }
-            }                       */
-
-                            system("cls");
-                    imprimir_tabuleiro(backup);
-                    system ("pause");
-
+    x = bck_X;
+    y = bck_Y;
+    for (int i = 0; i < largura; i++) {
+        for (int j = 0; j < altura; j++) {
+            matriz[i][j] = backup[i][j];
         }
+    }
+    //matriz[x][y] = 1;e aqui vai trazer de volta
+
+    printf ("\nFeito!\n");
+    goto FIM;
+}
+
     //dentro do for, fora dos ifs
+    FIM:
     system("cls");
     imprimir_tabuleiro(matriz);
+    //imprimir_tabuleiro(backup);
     }
 }

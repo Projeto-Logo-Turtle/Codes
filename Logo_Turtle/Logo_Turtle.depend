@@ -72,23 +72,32 @@
 
 1677395459 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.h
 
-1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\main.c
+1677438846 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
 
-1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.h
+1677438846 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.h
 
-1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.c
+1677438846 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.c
 	<conio.h>
 	"menu.h"
 	"jogo.h"
 
-1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.h
+1677438846 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.h
 
-1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
+1677438846 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
 	<stdio.h>
 	"registro.h"
 
-1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
+1677438846 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
+
+1677445986 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
 
