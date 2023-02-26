@@ -72,3 +72,23 @@
 
 1677395459 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.h
 
+1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.h
+
+1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.h
+
+1677434758 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
+	<stdio.h>
+	"registro.h"
+
+1677434758 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
+
