@@ -28,6 +28,7 @@
     movimenta_tartaruga(canva, quantidade);
     sleep(2);
     transition(canva);
+    chamada_menu();
 
 }
 
@@ -147,15 +148,22 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         printf("\nDigite o Comando %d: ", indice+1); // acredito que posso colocar as contagens
         scanf("%s", quantidade[indice].comando);
 
-        if(strcmp(quantidade[indice].comando, "save") == 0 or
-              strcmp(quantidade[indice].comando, "fim") == 0)
+        if(strcmp(quantidade[indice].comando, "fim") == 0)
         {
             break; // sai do loop for
         }
+
+        else if (strcmp(quantidade[indice].comando, "save") == 0){
+            char *matriz_point = &matriz;
+            salvar_matriz(matriz_point);
+            printf("\nSalvo!\n");
+            continue;
+            }
+
         else if(not (strcmp(quantidade[indice].comando, "sudoeste") == 0 or
                      strcmp(quantidade[indice].comando, "sudeste") == 0 or
                      strcmp(quantidade[indice].comando, "noroeste") == 0 or
-                     strcmp(quantidade[indice].comando, "nodeste") == 0 or
+                     strcmp(quantidade[indice].comando, "nordeste") == 0 or
                      strcmp(quantidade[indice].comando, "leste") == 0 or
                      strcmp(quantidade[indice].comando, "oeste") == 0 or
                      strcmp(quantidade[indice].comando, "norte") == 0 or
@@ -221,11 +229,53 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             matriz[x][y] = 1;
 
         }
-        else if (strcmp(quantidade[indice].comando, "save") == 0){
-            salvar_matriz(matriz);
-            printf("\nSalvo!");
+        else if (strcmp(quantidade[indice].comando, "noroeste") == 0) { matriz[x][y] = '\\';
 
+            for (int j = 0; j < quantidade[indice].passos; j++) {
+                if (y - 1 >= 0) {
+                    x--; //norte
+                    y--; //oeste
+                    matriz[x][y] = '\\';
+                }
+            }
+            // Atualiza a posição da tartaruga
+            matriz[x][y] = 1;
+        }
+        else if (strcmp(quantidade[indice].comando, "nordeste") == 0) { matriz[x][y] = '/';
 
+            for (int j = 0; j < quantidade[indice].passos; j++) {
+                if (y - 1 >= 0) {
+                    x--; //norte
+                    y++; //leste
+                    matriz[x][y] = '/';
+                }
+            }
+            // Atualiza a posição da tartaruga
+            matriz[x][y] = 1;
+        }
+        else if (strcmp(quantidade[indice].comando, "sudoeste") == 0) { matriz[x][y] = '/';
+
+            for (int j = 0; j < quantidade[indice].passos; j++) {
+                if (y - 1 >= 0) {
+                    x++; //sul
+                    y--; //oeste
+                    matriz[x][y] = '/';
+                }
+            }
+            // Atualiza a posição da tartaruga
+            matriz[x][y] = 1;
+        }
+        else if (strcmp(quantidade[indice].comando, "sudeste") == 0) { matriz[x][y] = '\\';
+
+            for (int j = 0; j < quantidade[indice].passos; j++) {
+                if (y - 1 >= 0) {
+                    x++; //sul
+                    y++; //leste
+                    matriz[x][y] = '\\';
+                }
+            }
+            // Atualiza a posição da tartaruga
+            matriz[x][y] = 1;
         }
     //dentro do for, fora dos ifs
     system("cls");

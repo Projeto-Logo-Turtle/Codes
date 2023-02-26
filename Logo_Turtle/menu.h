@@ -10,5 +10,5 @@ void design(); //Assinatura da função do design inicial
 void switch_menu(); //Assinatura da função de intercambiar do menu
 void about();
 //retirei a função parede, irei colocar um "for" identico, dentro da exibição da matriz. mantive as deadlines como recurso estético
-
+xau();
 #endif // MENU_H_INCLUDED

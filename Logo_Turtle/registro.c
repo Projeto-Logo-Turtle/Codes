@@ -26,12 +26,8 @@ void salvar_matriz(int matriz[largura][altura]) {
 
 void criar_arquivo() {
     FILE *arquivo = fopen("save.txt", "r");
-    if (arquivo == NULL) {
-        arquivo = fopen("save.txt", "w");
-        if (arquivo == NULL) {
-            printf("Erro ao criar arquivo.\n");
-            return;
-        }
+    /*if (arquivo == NULL) {
+        arquivo = fopen("save.txt", "w");*/
         fclose(arquivo);
     }
-}
+

@@ -43,12 +43,12 @@
 	"menu.h"
 	"jogo.h"
 
-1677374371 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.c
+1677399130 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.c
 	<conio.h>
 	"menu.h"
 	"jogo.h"
 
-1677374371 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.h
+1677399059 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.h
 
 1677393025 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.h
 
@@ -57,15 +57,16 @@
 	<stdlib.h>
 	"menu.h"
 
-1677382831 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.c
+1677399924 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.c
 	<iso646.h>
 	<ctype.h>
 	<time.h>
 	<windows.h>
 	"menu.h"
 	"jogo.h"
+	"registro.h"
 
-1677395525 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.c
+1677398814 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.c
 	<stdio.h>
 	"registro.h"
 
