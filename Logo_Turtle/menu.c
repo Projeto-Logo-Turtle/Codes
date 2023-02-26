@@ -8,7 +8,7 @@
 
 ///CALL
 int chamada_menu()
-{
+{   system("cls");
     inicial(); // adicionado para chamar a função
 }
 
@@ -51,7 +51,7 @@ options:
         about();
         break;
     case '3':
-        return 0;
+        xau();
         break;
     default:
         goto options;
@@ -71,4 +71,12 @@ void about()
    system("pause");
    system("cls");
    inicial();
+        }
+
+
+        xau(){
+        system("cls");
+        deadline();
+        printf("\n\n\t\t\Obrigado e ateh++\n\n");
+        deadline();
         }
