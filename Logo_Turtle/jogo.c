@@ -7,6 +7,7 @@
 ///A
 #include "menu.h"
 #include "jogo.h"
+#include "registro.h"
 ///D
 //Optei por tirar as definições e coloca-las no jogo.h. para facilitar mas mudanças entre os desenvolvedores.
 ///S
@@ -146,7 +147,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         printf("\nDigite o Comando %d: ", indice+1); // acredito que posso colocar as contagens
         scanf("%s", quantidade[indice].comando);
 
-        if (strcmp(quantidade[indice].comando, "fim") == 0)
+        if(strcmp(quantidade[indice].comando, "save") == 0 or
+              strcmp(quantidade[indice].comando, "fim") == 0)
         {
             break; // sai do loop for
         }
@@ -219,7 +221,12 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             matriz[x][y] = 1;
 
         }
+        else if (strcmp(quantidade[indice].comando, "save") == 0){
+            salvar_matriz(matriz);
+            printf("\nSalvo!");
 
+
+        }
     //dentro do for, fora dos ifs
     system("cls");
     imprimir_tabuleiro(matriz);
