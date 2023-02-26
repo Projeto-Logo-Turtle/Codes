@@ -8,6 +8,7 @@
 #include "menu.h"
 #include "jogo.h"
 #include "registro.h"
+#include "mecânica.h"
 ///D
 //Optei por tirar as definições e coloca-las no jogo.h. para facilitar mas mudanças entre os desenvolvedores.
 ///S
@@ -16,7 +17,8 @@
 {
     ///Variables
     char canva[largura][altura];
-    entr quantidade[20];
+    entr registro_player[20];
+    int i_local = 0;
 
     ///Code
     system("cls");
@@ -25,7 +27,16 @@
     ///Calls
 
     primeira_chamada(canva);
-    movimenta_tartaruga(canva, quantidade);
+
+    for(i_local; i_local < 20; i_local++){
+     input_movimento(canva, registro_player, i_local);
+     movimenta_tartaruga(canva, registro_player, i_local);
+     if (strcmp(registro_player[i_local].comando, "fim") == 0) {
+                break;
+
+        }
+    }
+
     sleep(2);
     transition(canva);
     chamada_menu();
@@ -126,159 +137,4 @@ void primeira_chamada(char I_G[largura][altura]){
     primeira_position(I_G);
     imprimir_tabuleiro(I_G);
 
-}
-
-int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
-{
-    ///Var
-    int indice;
-    int x = largura / 2; // Define a posição inicial da tartaruga no meio da matriz
-    int y = altura / 2;
-    matriz[x][y] = 1; // Imprime a tartaruga no centro da matriz
-
-
-    ///codigos
-
-    for (indice = 0; indice < 20; indice++)
-    {
-
-    //aqui a função das regras
-
-        ALOCATION_COMANDO:
-        printf("\nDigite o Comando %d: ", indice+1); // acredito que posso colocar as contagens
-        scanf("%s", quantidade[indice].comando);
-
-        if(strcmp(quantidade[indice].comando, "fim") == 0)
-        {
-            break; // sai do loop for
-        }
-
-        else if (strcmp(quantidade[indice].comando, "save") == 0){
-            char *matriz_point = &matriz;
-            salvar_matriz(matriz_point);
-            printf("\nSalvo!\n");
-            continue;
-            }
-
-        else if(not (strcmp(quantidade[indice].comando, "sudoeste") == 0 or
-                     strcmp(quantidade[indice].comando, "sudeste") == 0 or
-                     strcmp(quantidade[indice].comando, "noroeste") == 0 or
-                     strcmp(quantidade[indice].comando, "nordeste") == 0 or
-                     strcmp(quantidade[indice].comando, "leste") == 0 or
-                     strcmp(quantidade[indice].comando, "oeste") == 0 or
-                     strcmp(quantidade[indice].comando, "norte") == 0 or
-                     strcmp(quantidade[indice].comando, "sul") == 0))
-        {
-            //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
-            printf("\nRepita:");
-            goto ALOCATION_COMANDO;
-        }
-
-        ALOCATION_VALOR:
-        printf("Valor %d: ", indice+1);
-        scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
-
-//fim da coleta inicio do desenho
-
-        if (strcmp(quantidade[indice].comando, "fim") == 0) {
-                return matriz[x][y];
-            break;
-        }
-        else if (strcmp(quantidade[indice].comando, "leste") == 0) { matriz[x][y] = '-';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y + 1 < altura) {
-                    y++;
-                    matriz[x][y] = '-';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "oeste") == 0) { matriz[x][y] = '-';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y - 1 >= 0) {
-                    y--;
-                    matriz[x][y] = '-';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "norte") == 0) { matriz[x][y] = '|';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (x - 1 >= 0) {
-                    x--;
-                    matriz[x][y] = '|';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "sul") == 0) { matriz[x][y] = '|';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (x + 1 < largura) {
-                    x++;
-                    matriz[x][y] = '|';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-
-        }
-        else if (strcmp(quantidade[indice].comando, "noroeste") == 0) { matriz[x][y] = '\\';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y - 1 >= 0) {
-                    x--; //norte
-                    y--; //oeste
-                    matriz[x][y] = '\\';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "nordeste") == 0) { matriz[x][y] = '/';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y - 1 >= 0) {
-                    x--; //norte
-                    y++; //leste
-                    matriz[x][y] = '/';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "sudoeste") == 0) { matriz[x][y] = '/';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y - 1 >= 0) {
-                    x++; //sul
-                    y--; //oeste
-                    matriz[x][y] = '/';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-        else if (strcmp(quantidade[indice].comando, "sudeste") == 0) { matriz[x][y] = '\\';
-
-            for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y - 1 >= 0) {
-                    x++; //sul
-                    y++; //leste
-                    matriz[x][y] = '\\';
-                }
-            }
-            // Atualiza a posição da tartaruga
-            matriz[x][y] = 1;
-        }
-    //dentro do for, fora dos ifs
-    system("cls");
-    imprimir_tabuleiro(matriz);
-    }
 }
