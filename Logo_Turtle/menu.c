@@ -72,18 +72,3 @@ void about()
    system("cls");
    inicial();
         }
-
-
-
-/*paredes()
-{
-    printf("#");
-    for (int i = 1; i < largura - 1; i++)
-    {
-        printf(" ");
-    }
-    printf("#\n");
-}
-
-// que tal tentar encaixar tudo isso numa matriz, ao inves de varios printf? o melhor manter assim?
-*/

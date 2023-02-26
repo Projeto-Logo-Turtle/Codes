@@ -16,12 +16,15 @@
 
 int main()//void essa e as demais para elas retornarem vazio. Segundo Schildt¹, caso não declarada, a função retorna um valor, pode ser 0, de acordo com o compiolador.
 {
-/*  ///variaveis globais
-    char canva[largura][altura];
-    entr quantidade[20];
-*/
+    ///var
+    //ponteiro para observar o estado de entr quantidade, que guarda os comandos
+    /*
+    entr *ponteiro_visão[20];
+    ponteiro_vision
+    */
     ///Calls
     chamada_menu();
+
 
 END_GAME:
 return EXIT_GAME;
