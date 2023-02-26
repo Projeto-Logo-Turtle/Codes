@@ -137,7 +137,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
     matriz[x][y] = 1; // Imprime a tartaruga no centro da matriz
 
 
-
+    ///codigos
 
     for (indice = 0; indice < 20; indice++)
     {
@@ -178,7 +178,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         printf("Valor %d: ", indice+1);
         scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
 
-
+//fim da coleta inicio do desenho
 
         if (strcmp(quantidade[indice].comando, "fim") == 0) {
                 return matriz[x][y];
