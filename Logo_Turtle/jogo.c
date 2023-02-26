@@ -22,49 +22,14 @@
     //printf("chegou");
 
     ///Calls
-    chama_print_tabu(canva);
-    inputs(quantidade);
+
+    primeira_chamada(canva);
     movimenta_tartaruga(canva, quantidade);
-    //sleep(5);
+    sleep(5);
     transition();
 }
 
 
-inputs(entr quantidade[20])
-{
-    //ou o tabuleiro vem aqui, antes dos comandos
-
-    // melhor vir a recursão dele
-
-    int indice; //optei por tirar a declaração do parametro do for.
-    for (indice = 0; indice < 20; indice++)
-    {
-
-        ALOCATION_COMANDO:
-        printf("\nDigite o Comando %d: ", indice); // acredito que posso colocar as contagens
-        scanf("%s", quantidade[indice].comando);
-
-        if (strcmp(quantidade[indice].comando, "fim") == 0)
-        {
-            break; // sai do loop for
-        }
-        else if(not (strcmp(quantidade[indice].comando, "frente") == 0 or
-                     strcmp(quantidade[indice].comando, "tras") == 0 or
-                     strcmp(quantidade[indice].comando, "cima") == 0 or
-                     strcmp(quantidade[indice].comando, "baixo") == 0))
-        {
-            //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
-            printf("\nRepita:");
-            goto ALOCATION_COMANDO;
-        }
-
-        ALOCATION_VALOR:
-        printf("Valor %d: ", indice);
-        scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
-
-
-    }
-}
 
 
 transition()
@@ -105,6 +70,17 @@ deadline();
 
 //I_G = Identificador_Generico
 
+
+void primeira_position(char I_G[largura][altura])// so será usada 1 vez
+{
+/*
+    I_G[(largura/2)][(altura/2)+1] = '#';  //+1 em altura vai pra frente,
+    I_G[(largura/2)+1][(altura/2)] = '#';  //+1 em largura vai pra baixo
+    */
+    I_G[largura/2][altura/2] = '>';
+}
+
+
 int board(char I_G[largura][altura]) {
     // fecha a primeira linha e a última linha
     for (int i = 0; i < altura; i++) {
@@ -120,11 +96,7 @@ int board(char I_G[largura][altura]) {
             I_G[i][j] = ' ';
         }
     }
-    /*
-    I_G[(largura/2)][(altura/2)+1] = '#';  //+1 em altura vai pra frente,
-    I_G[(largura/2)+1][(altura/2)] = '#';  //+1 em largura vai pra baixo
-    */
-    I_G[largura/2][altura/2] = '>';
+
     return 0;
 }
 
@@ -143,20 +115,57 @@ int chama_print_tabu(char I_G[largura][altura]) {
     return 0;
 }
 
-void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]) {
-    int i;
+void primeira_chamada(char I_G[largura][altura]){
+
+    board(I_G);
+    primeira_position(I_G);
+    imprimir_tabuleiro(I_G);
+
+}
+
+void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
+{
+    ///Var
+    int indice;
     int x = largura / 2; // Define a posição inicial da tartaruga no meio da matriz
     int y = altura / 2;
+    matriz[x][y] = '>'; // Imprime a tartaruga no centro da matriz
 
-    // Imprime a tartaruga no centro da matriz
-    matriz[x][y] = '>';
 
-    for (i = 0; i < 20; i++){
-        if (strcmp(quantidade[i].comando, "fim") == 0) {
+
+
+    for (indice = 0; indice < 20; indice++)
+    {
+
+        ALOCATION_COMANDO:
+        printf("\nDigite o Comando %d: ", indice+1); // acredito que posso colocar as contagens
+        scanf("%s", quantidade[indice].comando);
+
+        if (strcmp(quantidade[indice].comando, "fim") == 0)
+        {
+            break; // sai do loop for
+        }
+        else if(not (strcmp(quantidade[indice].comando, "frente") == 0 or
+                     strcmp(quantidade[indice].comando, "tras") == 0 or
+                     strcmp(quantidade[indice].comando, "cima") == 0 or
+                     strcmp(quantidade[indice].comando, "baixo") == 0))
+        {
+            //indice--; // não precisa decrementar o indice pra voltar, vasta colocar um if na mesma linha.
+            printf("\nRepita:");
+            goto ALOCATION_COMANDO;
+        }
+
+        ALOCATION_VALOR:
+        printf("Valor %d: ", indice+1);
+        scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
+
+
+
+        if (strcmp(quantidade[indice].comando, "fim") == 0) {
             break;
         }
-        else if (strcmp(quantidade[i].comando, "frente") == 0) {
-            for (int j = 0; j < quantidade[i].passos; j++) {
+        else if (strcmp(quantidade[indice].comando, "frente") == 0) {
+            for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y + 1 < altura) {
                     y++;
                     matriz[x][y] = '-';
@@ -165,8 +174,8 @@ void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]) {
             // Atualiza a posição da tartaruga
             matriz[x][y] = '>';
         }
-        else if (strcmp(quantidade[i].comando, "tras") == 0) {
-            for (int j = 0; j < quantidade[i].passos; j++) {
+        else if (strcmp(quantidade[indice].comando, "tras") == 0) {
+            for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (y - 1 >= 0) {
                     y--;
                     matriz[x][y] = '-';
@@ -175,8 +184,8 @@ void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]) {
             // Atualiza a posição da tartaruga
             matriz[x][y] = '>';
         }
-        else if (strcmp(quantidade[i].comando, "cima") == 0) {
-            for (int j = 0; j < quantidade[i].passos; j++) {
+        else if (strcmp(quantidade[indice].comando, "cima") == 0) {
+            for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (x - 1 >= 0) {
                     x--;
                     matriz[x][y] = '-';
@@ -185,8 +194,8 @@ void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]) {
             // Atualiza a posição da tartaruga
             matriz[x][y] = '>';
         }
-        else if (strcmp(quantidade[i].comando, "baixo") == 0) {
-            for (int j = 0; j < quantidade[i].passos; j++) {
+        else if (strcmp(quantidade[indice].comando, "baixo") == 0) {
+            for (int j = 0; j < quantidade[indice].passos; j++) {
                 if (x + 1 < largura) {
                     x++;
                     matriz[x][y] = '-';
@@ -194,6 +203,11 @@ void movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]) {
             }
             // Atualiza a posição da tartaruga
             matriz[x][y] = '>';
+
         }
+
+    //dentro do for, fora dos ifs
+    system("cls");
+    imprimir_tabuleiro(matriz);
     }
 }
