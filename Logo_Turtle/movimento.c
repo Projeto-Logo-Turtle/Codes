@@ -30,6 +30,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
     for (indice = 0; indice < 20; indice++)
     {
+        instructions();
+
         //bloco de substituição do backup
         /*
            for (int i = 0; i < largura; i++) {
@@ -70,6 +72,9 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
                 else if (strcmp(quantidade[indice-1].comando, "move") == 0) { matriz[x][y] = ' ';}
 
             salvar_matriz(matriz);
+
+            system("cls");
+            imprimir_tabuleiro(matriz);
             printf("\nSalvo!\n");
             continue;
             }

@@ -80,3 +80,22 @@ void about()
         printf("\n\n\t\t\Obrigado e ateh++\n\n");
         deadline();
         }
+
+
+
+
+        instructions(){
+
+            char tartaruga= 1;
+
+printf("                                               use the rose wind to move:\n");
+printf("                                                                        |              norte\n");
+printf(" Instructions:                                                          |     noroeste   |   nordeste\n");
+printf(" move - move a tartaruga para as coordenadas                            |              \\ | /\n");
+printf(" save - Salva seu desenho atual num arquivo txt                         |    oeste  ---- %c --- leste\n", tartaruga);
+printf(" desfaz - retorna ao estado anterior                                    |              / | \\ \n");
+printf(" fim - finaliza seu desenho                                             |     sudoeste   |   sudeste\n");
+printf("                                                                        |               sul\n\n");
+deadline();
+
+        }
