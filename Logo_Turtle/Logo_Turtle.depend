@@ -43,3 +43,17 @@
 	"menu.h"
 	"jogo.h"
 
+1677374371 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677374371 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.h
+
+1677380651 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.h
+
+1677374397 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
