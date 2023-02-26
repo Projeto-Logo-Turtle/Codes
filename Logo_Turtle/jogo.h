@@ -22,7 +22,7 @@ int chama_print_tabu(char canva[largura][altura]);
 int board(char tabuleiro[largura][altura]); //nessa sig, diz que ela vai receber uma array bidimensional (matriz). optarei por trocar o nome, a fim de não haver confusão
 int transition(char matriz [largura][altura]); // função de print (impressão na tela)
 void tela_fim();
-int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20]);
+
 void primeira_chamada(char I_G[largura][altura]);
 void primeira_position(char I_G[largura][altura]);
 #endif // JOGO_H_INCLUDED

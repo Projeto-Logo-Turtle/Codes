@@ -1,23 +1,41 @@
 ///libs
 #include <stdio.h>
 ///archives
+#include "menu.h"
+#include "jogo.h"
 #include "registro.h"
+#include "movimento.h"
 //arquivo para as funçoes de registro
 
-void salvar_matriz(int matriz[largura][altura]) {
+void salvar_matriz(char matriz[largura][altura]) {
     FILE *arquivo = fopen("save.txt", "w");
     if (arquivo == NULL) {
       criar_arquivo();
 
     }
+    fputc('\n', arquivo);
+    fprintf(arquivo, "\t\tSeu desenho:");
+     fputc('\n', arquivo);fputc('\n', arquivo);
 
     for (int i = 0; i < largura; i++) {
         for (int j = 0; j < altura; j++) {
-            fprintf(arquivo, "%d ", matriz[i][j]);
-        }
-        fprintf(arquivo, "\n");
-    }
 
+                fputc(matriz[i][j], arquivo);
+            /*
+                if (matriz[i][j] != ' ') {
+            fputc(matriz[i][j], arquivo);
+        }
+        else if (matriz[i][j] = ' ') {
+            fputc(matriz[i][j], arquivo);
+        }
+            */
+
+        }
+        fputc('\n', arquivo);
+    }
+    fputc('\n', arquivo);
+    fputc('\n', arquivo);
+    fprintf(arquivo, "\t\tObrigado por Jogar!");
     fclose(arquivo);
 
 }
@@ -30,4 +48,3 @@ void criar_arquivo() {
         arquivo = fopen("save.txt", "w");*/
         fclose(arquivo);
     }
-
