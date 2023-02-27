@@ -10,4 +10,5 @@
 void salvar_matriz(char matriz[largura][altura]);
 void criar_arquivo();
 
+
 #endif // REGISTRO_H_INCLUDED

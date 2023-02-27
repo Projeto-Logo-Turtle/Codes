@@ -86,14 +86,15 @@
 
 1677448759 c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.h
 
-1677452192 source:c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
+1677457883 source:c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
 	<stdio.h>
+	<time.h>
 	"menu.h"
 	"jogo.h"
 	"registro.h"
 	"movimento.h"
 
-1677449843 c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
+1677457883 c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
 
 1677449843 source:c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.c
 	<iso646.h>
@@ -107,7 +108,7 @@
 
 1677448759 c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\movimento.h
 
-1677453439 source:c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\movimento.c
+1677454556 source:c:\users\vinij\onedrive\햞ea de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\movimento.c
 	<iso646.h>
 	<ctype.h>
 	<time.h>
