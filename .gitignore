@@ -51,3 +51,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 Logo_Turtle/save.txt
+Logo_Turtle/bin/Debug/save.txt
