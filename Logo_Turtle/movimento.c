@@ -13,7 +13,7 @@
 
 
 
-///------------------Função principal - Dividir-------------------------------------------------------------------------
+///------------------Função principal - Dividir------------------------------------------------------------------------
 int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 {
     ///Var
@@ -102,7 +102,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         printf("Valor %d: ", indice+1);
         scanf("%d", &quantidade[indice].passos); // com o valor inteiro ela está bugando
 
-///----------fim da coleta inicio do desenho-------------------------------------------------------------
+///----------fim da coleta inicio do desenho------------------------------------------------------------
 
 
         MOVIMENTATION:
