@@ -11,4 +11,5 @@ void switch_menu(); //Assinatura da função de intercambiar do menu
 void about();
 //retirei a função parede, irei colocar um "for" identico, dentro da exibição da matriz. mantive as deadlines como recurso estético
 xau();
+instructions();
 #endif // MENU_H_INCLUDED
