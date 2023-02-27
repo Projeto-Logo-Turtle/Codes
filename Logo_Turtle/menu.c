@@ -9,16 +9,16 @@
 ///CALL
 int chamada_menu()
 {   system("cls");
-    inicial(); // adicionado para chamar a função
+    inicial(); // adicionado para chamar a funÃ§Ã£o
 }
 
 ///FUNCTIONS
 void inicial()
 {
-    //função na tentativa de concatenar design e switch. seria melhor uma terceira fun ou simplesmente concatenar os blocos?
+    //funÃ§Ã£o na tentativa de concatenar design e switch. seria melhor uma terceira fun ou simplesmente concatenar os blocos?
     design();
     switch_menu();
-    //talvez eu possa colocar tudo em um unico block, mas seguindo Djikstra² "Divide et Impera". "Dividir e reinar".
+    //talvez eu possa colocar tudo em um unico block, mas seguindo DjikstraÂ² "Divide et Impera". "Dividir e reinar".
 }
 
 void deadline(){for(int i = 0; i<= largura*2; i++){printf("#");}printf("\n");}
@@ -36,7 +36,7 @@ void design(){  //void, pois eh uma function de print.
 void switch_menu()
 {
 
-    char indicador; //Variáveis locais optarei por padronizar
+    char indicador; //VariÃ¡veis locais optarei por padronizar
 
 options:
 
@@ -79,6 +79,7 @@ void about()
         deadline();
         printf("\n\n\t\t\Obrigado e ateh++\n\n");
         deadline();
+            system("pause");
         }
 
 
