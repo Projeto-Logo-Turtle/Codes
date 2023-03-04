@@ -85,12 +85,12 @@ void about()
 
 
 
-        instructions(){
+        instructions(int coord_x, int coord_y){
 
-            char tartaruga= 1;
+           const char tartaruga= 1;
 
-printf("   coord atual: x = %i                         use the rose wind to move:\n");
-printf("                y = %i                                                  |              norte\n");
+printf("\n   coord atual: x = %i\n                                               use the rose wind to move:\n", coord_x);
+printf("                y = %i\n                                                                        |              norte\n", coord_y);
 printf(" Instructions:                                                          |     noroeste   |   nordeste\n");
 printf(" move - move a tartaruga para as coordenadas                            |              \\ | /\n");
 printf(" save - Salva seu desenho atual num arquivo txt                         |    oeste  ---- %c --- leste\n", tartaruga);

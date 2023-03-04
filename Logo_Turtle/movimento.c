@@ -25,12 +25,16 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
     char backup [largura][altura];
     int bck_X, bck_Y;
 
-
+    int coord_x, coord_y;
     ///codigos
 
     for (indice = 0; indice < 20; indice++)
     {
-        instructions();
+
+    coord_x = x;
+    coord_y = y;
+
+        instructions(coord_x, coord_y);
 
         //bloco de substituição do backup
         /*
