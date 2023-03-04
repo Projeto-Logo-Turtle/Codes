@@ -365,7 +365,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
             matriz[i][j] = backup[i][j];
         }
     }
-    //matriz[x][y] = 1;e aqui vai trazer de volta
+    //matriz[x][y] = 1; e aqui vai trazer de volta
 
     printf ("\nFeito!\n");
     goto FIM;
