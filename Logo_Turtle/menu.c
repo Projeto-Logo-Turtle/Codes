@@ -89,8 +89,8 @@ void about()
 
             char tartaruga= 1;
 
-printf("                                               use the rose wind to move:\n");
-printf("                                                                        |              norte\n");
+printf("   coord atual: x = %i                         use the rose wind to move:\n");
+printf("                y = %i                                                  |              norte\n");
 printf(" Instructions:                                                          |     noroeste   |   nordeste\n");
 printf(" move - move a tartaruga para as coordenadas                            |              \\ | /\n");
 printf(" save - Salva seu desenho atual num arquivo txt                         |    oeste  ---- %c --- leste\n", tartaruga);
