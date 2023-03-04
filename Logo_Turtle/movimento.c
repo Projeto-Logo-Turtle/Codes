@@ -31,8 +31,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
     for (indice = 0; indice < 20; indice++)
     {
 
-    coord_x = x;
-    coord_y = y;
+    coord_x = y;
+    coord_y = x;
 
         instructions(coord_x, coord_y);
 
