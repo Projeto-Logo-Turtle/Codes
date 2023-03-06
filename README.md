@@ -1,4 +1,4 @@
-# Ver. 4.0.1
+# Ver. 4.1.0
 
 Tentativa de recriação do jogo Logo Turtle, em C, como parte do projeto para o 1st EE da Disciplina de LPI, da graduação em Engenharia da Computação na Universidade de Pernambuco POLI/UPE.
 
