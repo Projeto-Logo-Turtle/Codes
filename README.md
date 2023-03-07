@@ -11,3 +11,4 @@ Quinta versão - Código pronto pra build e e execução ultilizando a IDE Code:
 >[2] Dijkstra, E.W. "A Discipline of Programming". Prentice-Hall, 1976. p. 102 (Encontra-se dentro do livro "Farrer, Harry, and Luis Joyanes Aguilar. Algoritmos Estruturados. McGraw-Hill do Brasil, 1985." disponivel na Biblioteca POLI/UPE 14/02/2023).
 
 >Link do repositório: https://github.com/Projeto-Logo-Turtle/Codes
+>=
