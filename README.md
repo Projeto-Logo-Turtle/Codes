@@ -7,7 +7,7 @@ A try to recreate the game the game "Logo Trutle" in C lang. It's a avaliactive 
 Quinta versão - Código pronto pra build e e execução ultilizando a IDE Code::Blocks.
 
 > [1] Schildt, Herbert. "C Completo e Total". São Paulo: Makron Books, 1996. Cap. 6, p. 153 (PDF Domínio Público - https://www.inf.ufpr.br/lesoliveira/download/c-completo-total.pdf).
-> =
+> -
 >[2] Dijkstra, E.W. "A Discipline of Programming". Prentice-Hall, 1976. p. 102 (Encontra-se dentro do livro "Farrer, Harry, and Luis Joyanes Aguilar. Algoritmos Estruturados. McGraw-Hill do Brasil, 1985." disponivel na Biblioteca POLI/UPE 14/02/2023).
 
 >Link do repositório: https://github.com/Projeto-Logo-Turtle/Codes
