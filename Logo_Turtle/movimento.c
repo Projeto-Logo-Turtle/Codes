@@ -8,21 +8,22 @@
 #include "jogo.h"
 #include "registro.h"
 #include "movimento.h"
+#include "about.h"
 
 
 
 
 
 ///------------------Função principal - Dividir------------------------------------------------------------------------
-int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
+int movimenta_tartaruga(char matriz[altura][largura], entr quantidade[20])
 {
     ///Var
 
     int indice;
-    int x = largura / 2; // Define a posição inicial da tartaruga no meio da matriz
-    int y = altura / 2;
+    int x = altura / 2; // Define a posição inicial da tartaruga no meio da matriz
+    int y = largura / 2;
     matriz[x][y] = 1; // Imprime a tartaruga no centro da matriz
-    char backup [largura][altura];
+    char backup [altura][largura];
     int bck_X, bck_Y;
 
     int coord_x, coord_y;
@@ -38,8 +39,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
         //bloco de substituição do backup
         /*
-           for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+           for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -141,8 +142,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         else if (strcmp(quantidade[indice].comando, "leste") == 0) {
                 //bloco de substituição do backup
                 bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -152,7 +153,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
                 matriz[x][y] = '-';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (y + 1 < altura) {
+                if (y + 1 < largura) {
                     y++;
                     matriz[x][y] = '-';
                 }
@@ -166,8 +167,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
         else if (strcmp(quantidade[indice].comando, "oeste") == 0) {
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -192,8 +193,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -216,8 +217,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                 //bloco de substituição do backup
                 bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -226,7 +227,7 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
                 matriz[x][y] = '|';
 
             for (int j = 0; j < quantidade[indice].passos; j++) {
-                if (x + 1 < largura) {
+                if (x + 1 < altura) {
                     x++;
                     matriz[x][y] = '|';
                 }
@@ -241,8 +242,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -266,8 +267,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -291,8 +292,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -316,8 +317,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
                  //bloco de substituição do backup
                  bck_X = x; bck_Y = y;
-            for (int i = 0; i < largura; i++) {
-                for (int j = 0; j < altura; j++) {
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < largura; j++) {
             backup[i][j] = matriz[i][j];
             }
         }
@@ -360,8 +361,8 @@ int movimenta_tartaruga(char matriz[largura][altura], entr quantidade[20])
 
     x = bck_X;
     y = bck_Y;
-    for (int i = 0; i < largura; i++) {
-        for (int j = 0; j < altura; j++) {
+    for (int i = 0; i < altura; i++) {
+        for (int j = 0; j < largura; j++) {
             matriz[i][j] = backup[i][j];
         }
     }

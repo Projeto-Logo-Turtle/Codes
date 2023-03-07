@@ -3,6 +3,7 @@
 ///A
 #include "menu.h"
 #include "jogo.h"
+#include "about.h"
 ///D
 ///S
 
@@ -21,7 +22,7 @@ void inicial()
     //talvez eu possa colocar tudo em um unico block, mas seguindo Djikstra² "Divide et Impera". "Dividir e reinar".
 }
 
-void deadline(){for(int i = 0; i<= largura*2; i++){printf("#");}printf("\n");}
+void deadline(){for(int i = 0; i<= altura*2; i++){printf("#");}printf("\n");}
 
 void design(){  //void, pois eh uma function de print.
 
@@ -59,27 +60,12 @@ options:
 }
 
 
-void about()
-{
-    system("cls");
-    //
-    deadline();
-    printf("\nAlunos:\nPedro Bulle\nVinicius Jose\n\n");
-    deadline();
-    //
-
-   system("pause");
-   system("cls");
-   inicial();
-        }
-
-
         xau(){
         system("cls");
         deadline();
         printf("\n\n\t\t\Obrigado e ateh++\n\n");
         deadline();
-            system("pause");
+            //system("pause");
         }
 
 
