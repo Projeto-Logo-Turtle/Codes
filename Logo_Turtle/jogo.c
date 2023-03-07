@@ -9,6 +9,7 @@
 #include "jogo.h"
 #include "registro.h"
 #include "movimento.h"
+#include "about.h"
 ///D
 //Optei por tirar as definições e coloca-las no jogo.h. para facilitar mas mudanças entre os desenvolvedores.
 ///S
@@ -16,7 +17,7 @@
   void chamada_game()
 {
     ///Variables
-    char canva[largura][altura];
+    char canva[altura][largura];
     entr quantidade[20];
 
     ///Code
@@ -36,7 +37,7 @@
 
 
 
-int transition(char matriz[largura][altura])
+int transition(char matriz[altura][largura])
 {
 
     char start = '1';
@@ -66,7 +67,7 @@ int transition(char matriz[largura][altura])
     }
 }
 
-void tela_fim(char matriz [largura][altura]){
+void tela_fim(char matriz [altura][largura]){
 deadline();
 printf("\n\n\tObrigado por ter jogado! Se voce salvou o jogo, abra a pasta do executavel\n\n\tVeja como ficou seu desenho\n\n");
 imprimir_tabuleiro(matriz);
@@ -77,28 +78,28 @@ deadline();
 //I_G = Identificador_Generico
 
 
-void primeira_position(char I_G[largura][altura])// so será usada 1 vez
+void primeira_position(char I_G[altura][largura])// so será usada 1 vez
 {
 /*
-    I_G[(largura/2)][(altura/2)+1] = '#';  //+1 em altura vai pra frente,
-    I_G[(largura/2)+1][(altura/2)] = '#';  //+1 em largura vai pra baixo
+    I_G[(altura/2)][(largura/2)+1] = '#';  //+1 em largura vai pra frente,
+    I_G[(altura/2)+1][(largura/2)] = '#';  //+1 em altura vai pra baixo
     */
-    I_G[largura/2][altura/2] = 1;
+    I_G[altura/2][largura/2] = 1;
 }
 
 
-int board(char I_G[largura][altura]) {
+int board(char I_G[altura][largura]) {
     // fecha a primeira linha e a última linha
-    for (int i = 0; i < altura; i++) {
+    for (int i = 0; i < largura; i++) {
         I_G[0][i] = '#';
-        I_G[largura-1][i] = '#';
+        I_G[altura-1][i] = '#';
     }
 
     // fecha as linhas do meio
-    for (int i = 1; i < largura-1; i++) {
+    for (int i = 1; i < altura-1; i++) {
         I_G[i][0] = '#';
-        I_G[i][altura-1] = '#';
-        for (int j = 1; j < altura-1; j++) {
+        I_G[i][largura-1] = '#';
+        for (int j = 1; j < largura-1; j++) {
             I_G[i][j] = ' ';
         }
     }
@@ -106,22 +107,22 @@ int board(char I_G[largura][altura]) {
     return 0;
 }
 
-void imprimir_tabuleiro(char I_G[largura][altura]) {
-    for (int i = 0; i < largura; i++) {
-        for (int j = 0; j < altura; j++) {
+void imprimir_tabuleiro(char I_G[altura][largura]) {
+    for (int i = 0; i < altura; i++) {
+        for (int j = 0; j < largura; j++) {
             printf("%c", I_G[i][j]);
         }
         printf("\n");
     }
 }
 
-int chama_print_tabu(char I_G[largura][altura]) {
+int chama_print_tabu(char I_G[altura][largura]) {
     board(I_G);
     imprimir_tabuleiro(I_G);
     return 0;
 }
 
-void primeira_chamada(char I_G[largura][altura]){
+void primeira_chamada(char I_G[altura][largura]){
 
     board(I_G);
     primeira_position(I_G);
