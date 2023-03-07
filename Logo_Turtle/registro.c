@@ -6,9 +6,10 @@
 #include "jogo.h"
 #include "registro.h"
 #include "movimento.h"
+#include "about.h"
 //arquivo para as funçoes de registro
 
-void salvar_matriz(char matriz[largura][altura]) {
+void salvar_matriz(char matriz[altura][largura]) {
 
 /// Bloco de codigo realizado com auxilio do ChatGPT
    time_t rawtime;
@@ -41,8 +42,8 @@ void salvar_matriz(char matriz[largura][altura]) {
     fprintf(arquivo, "Feito em: %s\n\n", buffer);
      fputc('\n', arquivo);fputc('\n', arquivo);
 
-    for (int i = 0; i < largura; i++) {
-        for (int j = 0; j < altura; j++) {
+    for (int i = 0; i < altura; i++) {
+        for (int j = 0; j < largura; j++) {
 
                 fputc(matriz[i][j], arquivo);
             /*
