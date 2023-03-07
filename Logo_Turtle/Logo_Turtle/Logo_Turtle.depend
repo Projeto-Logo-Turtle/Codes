@@ -1,0 +1,255 @@
+# depslib dependency file v1.0
+1677210277 source:c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677210277 c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\menu.h
+
+1677209657 source:c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677212462 source:c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.c
+	"menu.h"
+	"jogo.h"
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+
+1677210648 c:\users\vinij\onedrive\Área de trabalho\projeto ee1 prof. joabe\codes\logo_turtle\jogo.h
+
+1677360084 source:c:\users\vinij\onedrive\Área de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677360648 c:\users\vinij\onedrive\Área de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\menu.h
+
+1677360915 source:c:\users\vinij\onedrive\Área de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677363379 c:\users\vinij\onedrive\Área de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\jogo.h
+
+1677363351 source:c:\users\vinij\onedrive\Área de trabalho\20230225 reformular joabe 1st ee\codes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+
+1677399130 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677399059 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\menu.h
+
+1677393025 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.h
+
+1677374397 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677399924 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+
+1677398814 source:c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.c
+	<stdio.h>
+	"registro.h"
+
+1677395459 c:\users\vinij\onedrive\Área de trabalho\nova_versão\codes\logo_turtle\registro.h
+
+1677579523 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1677965357 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.h
+
+1677965837 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+
+1677579523 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.h
+
+1677579523 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.c
+	<stdio.h>
+	<time.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+
+1677579523 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\registro.h
+
+1677579523 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+
+1677579523 c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\movimento.h
+
+1677966455 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\movimento.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+
+1677579523 source:c:\users\vinij\onedrive\Área de trabalho\1st-ee lpi 2023.1\codes\logo_turtle\recursos.rc
+
+1677968831 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\recursos.rc
+
+1677968831 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1678145330 c:\users\vinij\onedrive\Área de trabalho\logo_turtle\menu.h
+
+1678145474 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678144522 c:\users\vinij\onedrive\Área de trabalho\logo_turtle\jogo.h
+
+1678144522 c:\users\vinij\onedrive\Área de trabalho\logo_turtle\registro.h
+
+1678144522 c:\users\vinij\onedrive\Área de trabalho\logo_turtle\movimento.h
+
+1678145474 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\movimento.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678145474 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\registro.c
+	<stdio.h>
+	<time.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678145330 c:\users\vinij\onedrive\Área de trabalho\logo_turtle\about.h
+
+1678145474 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+	"about.h"
+
+1678145508 source:c:\users\vinij\onedrive\Área de trabalho\logo_turtle\about.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\about.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdbool.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678148301 c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\menu.h
+
+1678148301 c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\jogo.h
+
+1678148301 c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\registro.h
+
+1678148301 c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\movimento.h
+
+1678148301 c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\about.h
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+	"about.h"
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\movimento.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\recursos.rc
+
+1678148301 source:c:\users\vinij\onedrive\Área de trabalho\codes-final-changes\logo_turtle\registro.c
+	<stdio.h>
+	<time.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+

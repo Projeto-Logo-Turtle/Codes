@@ -1,0 +1,7 @@
+
+#ifndef RECURSOS_RC
+#define RECURSOS_RC
+
+MAIN ICON "Logo_Turtle.ico"
+
+#endif
