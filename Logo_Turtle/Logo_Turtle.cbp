@@ -50,9 +50,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="movimento.h" />
-		<Unit filename="recursos.rc">
-			<Option compilerVar="WINDRES" />
-		</Unit>
 		<Unit filename="registro.c">
 			<Option compilerVar="CC" />
 		</Unit>
