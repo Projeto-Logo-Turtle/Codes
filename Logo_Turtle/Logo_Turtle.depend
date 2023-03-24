@@ -187,3 +187,70 @@
 	"movimento.h"
 	"about.h"
 
+1679561000 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\recursos.rc
+
+1679561000 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\about.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdbool.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1679561000 c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\menu.h
+
+1679613631 c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\jogo.h
+
+1679561000 c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\registro.h
+
+1679561000 c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\movimento.h
+
+1679561000 c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\about.h
+
+1679617001 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\jogo.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1679561000 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1679617416 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\menu.c
+	<conio.h>
+	"menu.h"
+	"jogo.h"
+	"about.h"
+
+1679617499 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\movimento.c
+	<iso646.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+
+1679561000 source:c:\users\pedro-bulé\desktop\logo turtle\codes-branch_principal\logo_turtle\registro.c
+	<stdio.h>
+	<time.h>
+	"menu.h"
+	"jogo.h"
+	"registro.h"
+	"movimento.h"
+	"about.h"
+

@@ -84,6 +84,12 @@ int movimenta_tartaruga(char matriz[altura][largura], entr quantidade[20])
             printf("\nSalvo!\n");
             continue;
             }
+
+        else if (strcmp(quantidade[indice].comando, "colorir") == 0){
+            colorir();
+            goto MOVIMENTATION;
+        }
+
         else if (strcmp(quantidade[indice].comando, "move") == 0){
             goto MOVIMENTATION;
         }

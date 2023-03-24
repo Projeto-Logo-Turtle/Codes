@@ -75,14 +75,14 @@ options:
 
            const char tartaruga= 1;
 
-printf("\n   coord atual: x = %i\n                                               use the rose wind to move:\n", coord_x);
+printf("\n   Coord atual: x = %i\n                                               Use a Rosa dos Ventos para mover:\n", coord_x);
 printf("                y = %i\n                                                                        |              norte\n", coord_y);
 printf(" Instructions:                                                          |     noroeste   |   nordeste\n");
 printf(" move - move a tartaruga para as coordenadas                            |              \\ | /\n");
 printf(" save - Salva seu desenho atual num arquivo txt                         |    oeste  ---- %c --- leste\n", tartaruga);
 printf(" desfaz - retorna ao estado anterior                                    |              / | \\ \n");
 printf(" fim - finaliza seu desenho                                             |     sudoeste   |   sudeste\n");
-printf("                                                                        |               sul\n\n");
+printf(" colorir -  muda a cor do jogo                                                          sul\n\n");
 deadline();
 
         }

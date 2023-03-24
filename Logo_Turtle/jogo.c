@@ -19,6 +19,7 @@
     ///Variables
     char canva[altura][largura];
     entr quantidade[20];
+    char color;
 
     ///Code
     system("cls");
@@ -129,5 +130,41 @@ void primeira_chamada(char I_G[altura][largura]){
     imprimir_tabuleiro(I_G);
 
 }
+ int colorir(){
+
+unsigned int cor;
+printf("Digite um numero:\n 1 - Azul \n 2 - Verde \n 3 - Verde Agua \n 4 - Vermelho \n 5 - Roxo \n 6 - Amarelo \n 7 - Branco\n\n  ");
+
+do{
+scanf("%d", &cor);
+}while(cor < 1 || cor > 7);
+
+if(cor == 1){
+    system("COLOR 01");
+}
+else if (cor == 2){
+    system("COLOR 02");
+}
+else if (cor == 3){
+    system("COLOR 03");
+}
+else if (cor == 4){
+    system("COLOR 04");
+}
+else if (cor == 5){
+    system("COLOR 05");
+}
+else if (cor == 6){
+    system("COLOR 06");
+}
+else if (cor == 7){
+    system("COLOR 07");
+}
+}
+
+
+
+
+
 
 
